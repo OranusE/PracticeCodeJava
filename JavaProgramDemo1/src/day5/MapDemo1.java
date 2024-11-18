@@ -1,0 +1,26 @@
+package day5;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapDemo1 {
+
+	public static void main(String[] args) {
+		
+		Map <Integer,String>map = new HashMap<Integer,String>();
+		
+		map.put(100, "Amit");
+		map.put(101, "Chandan");
+		map.put(102, "Gayatri");
+		map.put(103, "Mohit");
+		map.put(104, "Chandan");
+		map.put(103, "Shalet");
+		
+		for(Map.Entry m: map.entrySet())
+		{
+			System.out.println("Key  = "+m.getKey() + " Value = " + m.getValue());
+		}
+
+	}
+
+}
